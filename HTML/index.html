@@ -34,6 +34,18 @@
       display: flex;
       gap: 10px;
     }
+
+    /* Define the initial state and transition for all links */
+.navbar a {
+  transition: transform 0.3s ease; /* 0.3s is the duration of the animation. Adjust as needed. */
+  display: inline-block; /* Required for transform to work on inline elements like <a> */
+}
+
+/* Define the hover state */
+.navbar a:hover {
+  transform: scale(1.1); /* 1.1 will make the link 10% larger. Adjust as needed. */
+}
+
   </style>
 </head>
 <body>
@@ -43,7 +55,8 @@
     <a href="photography.html">Photography</a>
     <a href="cinematography.html">Cinematography</a>
   </div>
-  <h1>Flickster LLC</h1>
+  <h1><a href="index.html" style="color: inherit; text-decoration: none;">Flickster LLC</a></h1>
+
   <div>
     <a href="learning.html">Learning</a>
     <a href="coding.html">Coding</a>
