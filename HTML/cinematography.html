@@ -1,69 +1,110 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <style>
-    body {
-      /* Layer the PNG over the gradient */
-      background-image: 
-        url('file:///C:/Users/randy/Documents/FlicksterLlc/HTML/LogoDraft2NoBackground.png'), 
-        linear-gradient(to right, #000000, #bdc3c7);
-      
-      /* Ensure the PNG doesn't repeat and is centered horizontally and positioned more towards the center vertically */
-      background-repeat: no-repeat, repeat;
-      background-position: center -25%, center center; /* Adjust the 50% to move the PNG up or down */
-      background-size: 25%, cover; /* Adjust the 25% if you want the PNG to be a different size */
+    <style>
+        body {
+            /* Layer the PNG over the gradient */
+            background-image: url('file:///C:/Users/randy/Documents/FlicksterLlc/HTML/LogoDraft2NoBackground.png'),
+            linear-gradient(to right, #000000, #bdc3c7);
 
-      /* Set the text color to golden orange */
-      color: #FFA500;
-    }
-    .center {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      width: 25%;
-    }
-    h1 {
-      text-align: center;
-    }
-    .navbar {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    .navbar div {
-      display: flex;
-      gap: 10px;
-    }
+            /* Ensure the PNG doesn't repeat and is centered horizontally and positioned more towards the center vertically */
+            background-repeat: no-repeat, repeat;
+            background-position: center -25%, center center; /* Adjust the 50% to move the PNG up or down */
+            background-size: 25%, cover; /* Adjust the 25% if you want the PNG to be a different size */
 
-    /* Define the initial state and transition for all links */
-.navbar a {
-  transition: transform 0.3s ease; /* 0.3s is the duration of the animation. Adjust as needed. */
-  display: inline-block; /* Required for transform to work on inline elements like <a> */
-}
+            /* Set the text color to golden orange */
+            color: #FFA500;
+        }
 
-/* Define the hover state */
-.navbar a:hover {
-  transform: scale(1.1); /* 1.1 will make the link 10% larger. Adjust as needed. */
-}
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 25%;
+        }
 
-  </style>
+        h1 {
+            text-align: center;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar div {
+            display: flex;
+            gap: 10px;
+        }
+
+        /* Define the initial state and transition for all links */
+        .navbar a {
+            transition: transform 0.3s ease; /* 0.3s is the duration of the animation. Adjust as needed. */
+            display: inline-block; /* Required for transform to work on inline elements like <a> */
+        }
+
+        /* Define the hover state */
+        .navbar a:hover {
+            transform: scale(1.1); /* 1.1 will make the link 10% larger. Adjust as needed. */
+        }
+
+        /* Remove the grid layout and add some vertical spacing between videos */
+        .videos-grid {
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Center the videos horizontally */
+            gap: 20px; /* Vertical spacing between videos */
+        }
+
+        /* Make the videos responsive */
+        .video-container iframe {
+            max-width: 100%; /* Ensure the video doesn't overflow its container */
+            width: 560px; /* Default width */
+            height: 315px; /* Default height */
+        }
+    </style>
 </head>
+
 <body>
 
-<div class="navbar">
-  <div>
-    <a href="photography.html">Photography</a>
-    <a href="cinematography.html">Cinematography</a>
-  </div>
-  <h1><a href="index.html" style="color: inherit; text-decoration: none;">Flickster LLC</a></h1>
+    <!-- Content Container -->
+    <div class="content-container">
 
-  <div>
-    <a href="learning.html">Learning</a>
-    <a href="coding.html">Coding</a>
-  </div>
-</div>
+        <!-- Navbar -->
+        <div class="navbar">
+            <div>
+                <a href="photography.html">Photography</a>
+                <a href="cinematography.html">Cinematography</a>
+            </div>
+            <h1><a href="index.html" style="color: inherit; text-decoration: none;">Flickster LLC</a></h1>
+            <div>
+                <a href="learning.html">Learning</a>
+                <a href="coding.html">Coding</a>
+            </div>
+        </div>
 
-<!-- Empty content for the Photography page -->
+        <!-- YouTube Videos Grid -->
+        <div class="videos-grid">
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/K2d6khLJaa0?si=ZmDDoB2wXnpk6M3M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/K2d6khLJaa0?si=ef_oRQm1HZhVjAOQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/OrhjjbIQ9ZQ?si=vnaCtWJ_ITiJdFGf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="video-container">
+                <iframe width="1366" height="651" src="https://www.youtube.com/embed/i186fiLovqY" title="Short Peek Inside and Out of Phoenix at Night" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </div>
+
+    </div> <!-- End of Content Container -->
+
+    <!-- Empty content for the Photography page -->
 
 </body>
+
 </html>
