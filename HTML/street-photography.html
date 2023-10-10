@@ -1,87 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <style>
-    body {
-      /* Layer the PNG over the gradient */
-      background-image: 
-        url('file:///C:/Users/randy/Documents/FlicksterLlc/HTML/LogoDraft2NoBackground.png'), 
-        linear-gradient(to right, #000000, #bdc3c7);
-      
-      /* Ensure the PNG doesn't repeat and is centered horizontally and positioned more towards the center vertically */
-      background-repeat: no-repeat, repeat;
-      background-position: center center, center center; 
-      background-size: 25%, cover; 
-
-      /* Set the text color to golden orange */
-      color: #FFA500;
-
-      /* Make the background fixed */
-      background-attachment: fixed;
-    }
-    .center {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      width: 25%;
-    }
-    h1 {
-      text-align: center;
-    }
-    .navbar {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    .navbar div {
-      display: flex;
-      gap: 10px;
-    }
-
-    /* Define the initial state and transition for all links */
-.navbar a {
-  transition: transform 0.3s ease; /* 0.3s is the duration of the animation. Adjust as needed. */
-  display: inline-block; /* Required for transform to work on inline elements like <a> */
-}
-
-/* Define the hover state */
-.navbar a:hover {
-  transform: scale(1.1); /* 1.1 will make the link 10% larger. Adjust as needed. */
-}
-
-/* Style for the fixed navbar */
-.navbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0); /* Optional: make navbar slightly transparent */
-    z-index: 1000; /* Optional: ensure navbar is above all other content */
-  }
-  
-  /* Add padding to the top of the body to prevent content from being hidden behind the navbar */
-  body {
-    padding-top: 50px; /* Adjust as needed depending on the height of your navbar */
-  }
-
-/* New CSS class for the images */
-.image-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 20px;
-}
-
-.image {
-  margin: 10px;
-  flex: 0 0 45%; /* Adjust this to control the number of images per row */
-}
-
-.image img {
-  max-width: 100%; 
-  height: auto;
-  border-radius: 10px; /* Optional: for rounded corners */
-}
-  </style>
+  <link rel="stylesheet" href="../CSS/streetphotography.css"> <!-- Update with the actual CSS file name -->
 </head>
 <body>
 
@@ -91,29 +11,27 @@
     <a href="cinematography.html">Cinematography</a>
   </div>
   <h1><a href="index.html" style="color: inherit; text-decoration: none;">Flickster LLC</a></h1>
-
   <div>
     <a href="learning.html">Learning</a>
     <a href="coding.html">Coding</a>
   </div>
 </div>
 
-<!-- Empty content for the Photography page -->
-
 <!-- Images Container -->
 <div class="image-container">
   <div class="image">
-    <img src="file:///C:/Users/randy/Documents/FlicksterLlc/HTML/IMG_5134.jpg" alt="Image 1">
+    <img src="../Assets/Images/Photography/Street Photography/IMG_5134.jpg" alt="Image 1"> <!-- Updated the image path -->
   </div>
   <div class="image">
-    <img src="file:///C:/Users/randy/Documents/FlicksterLlc/HTML/IMG_5150.jpg" alt="Image 2">
+    <img src="../Assets/Images/Photography/Street Photography/IMG_5150.jpg" alt="Image 2"> <!-- Updated the image path -->
   </div>
   <div class="image">
-    <img src="file:///C:/Users/randy/Documents/FlicksterLlc/HTML/IMG_5152.jpg" alt="Image 3">
+    <img src="../Assets/Images/Photography/Street Photography/IMG_5152.jpg" alt="Image 3"> <!-- Updated the image path -->
   </div>
   <div class="image">
-    <img src="file:///C:/Users/randy/Documents/FlicksterLlc/HTML/IMG_5153.jpg" alt="Image 4">
+    <img src="../Assets/Images/Photography/Street Photography/IMG_5153.jpg" alt="Image 4"> <!-- Updated the image path -->
   </div>
 </div>
+
 </body>
 </html>
