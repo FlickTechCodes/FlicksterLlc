@@ -1,70 +1,21 @@
-body {
-    /* Layer the PNG over the gradient */
-    background-image: 
-      url('../Assets/Images/general/LogoDraft2NoBackground.png'), 
-      linear-gradient(to right, #000000, #bdc3c7);
-    
-    /* Ensure the PNG doesn't repeat and is centered horizontally and positioned more towards the center vertically */
-    background-repeat: no-repeat, repeat;
-    background-position: center center, center center; 
-    background-size: 25%, cover; 
-  
-    /* Set the text color to golden orange */
-    color: #FFA500;
-  
-    /* Make the background fixed */
-    background-attachment: fixed;
-  }
-  
-  .center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 25%;
-  }
-  
-  h1 {
-    text-align: center;
-  }
-  
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .navbar div {
-    display: flex;
-    gap: 10px;
-  }
-  
-  /* Define the initial state and transition for all links */
-  .navbar a {
-    transition: transform 0.3s ease;
-    display: inline-block;
-  }
-  
-  /* Define the hover state */
-  .navbar a:hover {
-    transform: scale(1.1);
-  }
-  
-  /* New CSS class for the images */
-  .image-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 20px;
-  }
-  
-  .image {
-    margin: 10px;
-    flex: 0 0 45%;
-  }
-  
-  .image img {
-    max-width: 100%; 
-    height: auto;
-    border-radius: 10px;
-  }
-  
+/* Styles for the container holding the images */
+.image-container {
+  display: flex; /* Use flexbox layout for child elements */
+  flex-wrap: wrap; /* Allow child elements to wrap onto the next line */
+  justify-content: center; /* Center child elements horizontally */
+  padding: 20px; /* Add padding around the container for spacing */
+  margin-top: 60px; /* Adjust this value based on the height of your navbar to keep images under*/
+}
+
+/* Styles for individual image elements */
+.image {
+  margin: 10px; /* Add margin for spacing between images */
+  flex: 0 0 45%; /* Flex grow, shrink, and basis values to control the size and flexibility */
+}
+
+/* Styles for the images themselves */
+.image img {
+  max-width: 100%; /* Ensure images are responsive and don’t overflow their containers */
+  height: auto; /* Maintain the original aspect ratio of the images */
+  border-radius: 10px; /* Add rounded corners for a softer visual appearance */
+}

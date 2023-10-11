@@ -1,44 +1,49 @@
-/* Styles for the image button */
+/* Styles for the interactive image buttons */
 .image-button {
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
-  }
-  
-  .image-button img {
-    width: 200px; /* Adjust as needed */
-    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
-    opacity: 0.5;
-    border-radius: 10px; /* Adjust as needed */
-  }
-  
-  .image-button span {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 20px; /* Adjust as needed */
-    transition: opacity 0.3s ease-in-out;
-    opacity: 1;
-    z-index: 1;
-  }
-  
-  .image-button a {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 2;
-  }
-  
-  .image-button:hover img {
-    opacity: 1;
-    transform: scale(1.75); /* Adjust this value to control the zoom level */
-  }
-  
-  .image-button:hover span {
-    opacity: 0.1;
-  }
-  
+  position: relative; /* Positioning context for child elements */
+  display: inline-block; /* Inline-level block container */
+  cursor: pointer; /* Cursor appears as a pointer to indicate clickable element */
+  margin: 70px 15px; /* Add space on the top and sides of each image button */
+}
+
+/* Styles for the images within the buttons */
+.image-button img {
+  width: 200px; /* Set a fixed width for the images */
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out; /* Add smooth transitions for opacity and scale */
+  opacity: 0.5; /* Initial opacity level */
+  border-radius: 10px; /* Rounded corners for a softer visual appearance */
+}
+
+/* Styles for the overlay text on the image buttons */
+.image-button span {
+  position: absolute; /* Absolute positioning within the .image-button container */
+  top: 50%; /* Centered vertically */
+  left: 50%; /* Centered horizontally */
+  transform: translate(-50%, -50%); /* Offset positioning for perfect centering */
+  color: white; /* Text color for readability against dark images */
+  font-size: 20px; /* Font size for visibility */
+  transition: opacity 0.3s ease-in-out; /* Smooth transition for opacity */
+  opacity: 1; /* Initial opacity level */
+  z-index: 1; /* Stack order above the image, below the link */
+}
+
+/* Styles for the clickable area of the image buttons */
+.image-button a {
+  position: absolute; /* Absolute positioning to cover the entire .image-button area */
+  top: 0; /* Starting from the top edge */
+  left: 0; /* Starting from the left edge */
+  width: 100%; /* Cover the full width */
+  height: 100%; /* Cover the full height */
+  z-index: 2; /* Stack order above the image and text for clickable area */
+}
+
+/* Styles for the hover state of the image buttons */
+.image-button:hover img {
+  opacity: 1; /* Full opacity on hover for visual feedback */
+  transform: scale(1.75); /* Zoom effect for visual emphasis */
+}
+
+/* Styles for the hover state of the overlay text */
+.image-button:hover span {
+  opacity: 0.1; /* Reduced opacity on hover to focus on the image */
+}

@@ -1,0 +1,5 @@
+/* Styling for the login form to push it below the navbar */
+.login-form {
+    margin-top: 80px; /* Adjust the top margin as needed to push the form below the navbar */
+}
+

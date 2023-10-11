@@ -1,0 +1,15 @@
+/* Remove the grid layout and add some vertical spacing between videos */
+.videos-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the videos horizontally */
+    gap: 20px; /* Vertical spacing between videos */
+    margin-top: 80px; /* Adjust this value based on the height of your navbar */
+}
+
+/* Make the videos responsive */
+.video-container iframe {
+    max-width: 100%; /* Ensure the video doesn't overflow its container */
+    width: 560px; /* Default width */
+    height: 315px; /* Default height */
+}

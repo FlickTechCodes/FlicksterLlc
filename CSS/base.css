@@ -1,51 +1,89 @@
+/* --- BODY STYLING --- */
+/* This section styles the entire body of the webpage. */
 body {
-  /* Layer the PNG over the gradient */
+  /* Sets a background image and a gradient as the webpage's background. */
   background-image: 
-    url('../Assets/Images/general/LogoDraft2NoBackground.png'), 
-    linear-gradient(to right, #000000, #bdc3c7);
+    url('../Assets/Images/general/LogoDraft2NoBackground.png'), /* Specifies the URL of the background image. */
+    linear-gradient(to right, #000000, #bdc3c7); /* Creates a gradient background from black to a grey color. */
   
-  /* Ensure the PNG doesn't repeat and is centered horizontally and positioned more towards the center vertically */
-  background-repeat: no-repeat, repeat;
-  background-position: center center, center center; 
-  background-size: 25%, cover; 
+  /* Controls the repetition and positioning of the background image and gradient. */
+  background-repeat: no-repeat, repeat; /* The image doesn't repeat, but the gradient does. */
+  background-position: center center, center center; /* Centers both the image and gradient. */
+  background-size: 25%, cover; /* Sets the image's size to 25% and makes the gradient cover the entire area. */
 
-  /* Set the text color to golden orange */
-  color: #FFA500;
+  /* Text color styling. */
+  color: #FFA500; /* Sets the text color to a golden orange. */
 
-  /* Make the background fixed */
-  background-attachment: fixed;
+  /* Background attachment styling. */
+  background-attachment: fixed; /* Makes the background fixed when scrolling. */
 }
-  
-  .center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 25%;
-  }
-  
-  h1 {
-    text-align: center;
-  }
-  
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .navbar div {
-    display: flex;
-    gap: 10px;
-  }
-  
-  /* Define the initial state and transition for all links */
-  .navbar a {
-    transition: transform 0.3s ease; /* 0.3s is the duration of the animation. Adjust as needed. */
-    display: inline-block; /* Required for transform to work on inline elements like <a> */
-  }
-  
-  /* Define the hover state */
-  .navbar a:hover {
-    transform: scale(1.1); /* 1.1 will make the link 10% larger. Adjust as needed. */
-  }
-  
+
+/* --- CENTER CLASS STYLING --- */
+/* This section styles elements with the class "center" to center them on the page. */
+.center {
+  display: block; /* Sets the display property to block for easier styling and positioning. */
+  margin-left: auto; /* Automatically adjusts the left margin for centering. */
+  margin-right: auto; /* Automatically adjusts the right margin for centering. */
+  width: 25%; /* Sets the width of the element to 25% of the container. */
+}
+
+/* --- H1 HEADER STYLING --- */
+/* This section styles the h1 headers to center their text. */
+h1 {
+  text-align: center; /* Centers the text inside h1 elements. */
+}
+
+/* --- NAVBAR STYLING --- */
+/* This section styles the navigation bar at the top of the webpage. */
+.navbar {
+  display: flex; /* Uses flexbox for easy alignment and spacing of items. */
+  justify-content: space-between; /* Spaces navbar items evenly. */
+  align-items: center; /* Centers items vertically in the navbar. */
+  position: fixed; /* Fixes the navbar at the top of the page. */
+  top: 0; /* Positions the navbar at the top edge of the page. */
+  width: 100%; /* Makes the navbar span the entire width of the page. */
+  background-color: rgba(0, 0, 0, 0); /* Gives the navbar a transparent background. */
+  z-index: 1000; /* Ensures the navbar stays on top of other elements. */
+}
+
+/* This section styles the div containers within the navbar for alignment and spacing. */
+.navbar div {
+  display: flex; /* Uses flexbox for easy alignment and spacing of items. */
+  gap: 10px; /* Creates a 10px gap between items in the navbar. */
+}
+
+/* --- NAVBAR LINK STYLING --- */
+/* This section styles the links within the navbar, including their hover effects. */
+
+/* Style for Navbar Title */
+.navbar-title {
+  color: inherit; /* Inherits the color property from its parent element */
+  text-decoration: none; /* Removes the underline from the link */
+}
+
+.navbar a {
+  transition: transform 0.3s ease; /* Adds a smooth transform transition effect. */
+  display: inline-block; /* Allows the transform property to affect the link elements. */
+}
+
+/* This section styles the hover state of the links for a zooming effect. */
+.navbar a:hover {
+  transform: scale(1.1); /* Scales the link size up to 110% when hovered. */
+}
+/* Style for Navbar Links */
+.navbar a {
+  color: white; /* Set the color of the navbar links to white */
+  text-decoration: none; /* Remove the underline from the links */
+}
+
+/* Style for Navbar Links on Hover */
+.navbar a:hover {
+  color: #FFA500; /* Set the color of the navbar links to golden orange when hovered */
+}
+
+/* --- MAIN CONTENT STYLING --- */
+/* This section styles the main content area of the webpage. */
+
+main {
+  padding-top: 80px; /* Adjusts the space at the top of the main content to avoid overlap with the navbar. */
+}
