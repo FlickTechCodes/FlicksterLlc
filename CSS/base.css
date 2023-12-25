@@ -87,3 +87,13 @@ h1 {
 main {
   padding-top: 80px; /* Adjusts the space at the top of the main content to avoid overlap with the navbar. */
 }
+
+/* Specific styles for the homepage image */
+.homepage-image {
+  max-width: 50%; /* Adjust this value to scale the image down */
+  display: block; /* Makes it a block-level element */
+  margin-right: auto; /* Pushes the image to the left */
+  margin-left: 0; /* No extra space on the left side */
+  border-radius: 50px; /* Add rounded corners for a softer visual appearance */
+  /* Add any other styles you need for this image */
+}
