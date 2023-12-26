@@ -41,7 +41,7 @@ h1 {
   align-items: center; /* Centers items vertically in the navbar. */
   position: fixed; /* Fixes the navbar at the top of the page. */
   top: 0; /* Positions the navbar at the top edge of the page. */
-  width: 100%; /* Makes the navbar span the entire width of the page. */
+  width: 98%; /* Makes the navbar span the entire width of the page. */
   background-color: rgba(0, 0, 0, 0); /* Gives the navbar a transparent background. */
   z-index: 1000; /* Ensures the navbar stays on top of other elements. */
 }
@@ -95,5 +95,41 @@ main {
   margin-right: auto; /* Pushes the image to the left */
   margin-left: 0; /* No extra space on the left side */
   border-radius: 50px; /* Add rounded corners for a softer visual appearance */
-  /* Add any other styles you need for this image */
+}
+
+/*Quick Link Styles*/
+.quick-links {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.link-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  background-color: #f0f0f0;
+  color: #000000;
+  text-decoration: none; /* Removes underline from all links */
+  font-size: 20px;
+  border-radius: 40px;
+  transition: background-color 0.3s;
+  width: 100%; /* Ensure it fills the grid area */
+  box-sizing: border-box; /* Ensures padding and borders are included in total width/height */
+}
+
+.link-box.wide {
+  grid-column: span 3;
+}
+
+.link-box.narrow {
+  grid-column: span 2.5;
+}
+
+/* Hover effect for the link box */
+.link-box:hover {
+  background-color: #FFA500; /* Slightly lighter on hover */
+  /* Add any other hover effects you like */
 }
